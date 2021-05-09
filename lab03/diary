@@ -1,0 +1,184 @@
+>> 2*6 + (7-4)^2
+ans = 21
+>> u = [1 -4 6]
+u =
+
+   1  -4   6
+
+>> u = [1; -4; 6]
+u =
+
+   1
+  -4
+   6
+
+>> A = [1 2 -3; 2 4 0; 1 1 1]
+A =
+
+   1   2  -3
+   2   4   0
+   1   1   1
+
+>> u = [1; -4; 6]
+u =
+
+   1
+  -4
+   6
+
+>> v = [2; 1; -1]
+v =
+
+   2
+   1
+  -1
+
+>> 2*v + 3*u
+ans =
+
+    7
+  -10
+   16
+
+>> dot(u,v)
+ans = -8
+>> cross(u,v)
+ans =
+
+   -2
+   13
+    9
+
+>> norm(u)
+ans = 7.2801
+>> u = [3 5]
+u =
+
+   3   5
+
+>> v = [7 2]
+v =
+
+   7   2
+
+>> proj = dot(u,v)/(norm((v))^2*v
+>> proj = dot(u,v)/(norm(v))^2*v
+error: parse error:
+
+  syntax error
+
+>>> >> proj = dot(u,v)/(norm(v))^2*v
+     ^
+>> >> proj = dot(u,v)/(norm(v))^2*v
+error: parse error:
+
+  syntax error
+
+>>> >> proj = dot(u,v)/(norm(v))^2*v
+    ^
+>> proj = dot(u,v)/(norm(v))^2*v
+proj =
+
+   4.0943   1.1698
+
+>> A = [1 2 -3; 2 4 0; 1 1 1]
+A =
+
+   1   2  -3
+   2   4   0
+   1   1   1
+
+>> B = [1 2 3 4; 0 -2 -4 6; 1 -1 0 0]
+B =
+
+   1   2   3   4
+   0  -2  -4   6
+   1  -1   0   0
+
+>> A * B
+ans =
+
+   -2    1   -5   16
+    2   -4  -10   32
+    2   -1   -1   10
+
+>> B' * A
+ans =
+
+    2    3   -2
+   -3   -5   -7
+   -5  -10   -9
+   16   32  -12
+
+>> 2 * A - 4 * eye(3)
+ans =
+
+  -2   4  -6
+   4   4   0
+   2   2  -2
+
+>> det(A)
+ans = 6
+>> inv(A)
+ans =
+
+   0.6667  -0.8333   2.0000
+  -0.3333   0.6667  -1.0000
+  -0.3333   0.1667        0
+
+>> eig(A)
+ans =
+
+   4.5251 +      0i
+   0.7374 + 0.8844i
+   0.7374 - 0.8844i
+
+>> rank(A)
+ans = 3
+>> x = linspace(0, 2*pi, 50);
+>> y = sin (x);
+>> plot(x,y);
+>> clf
+>> plot(x,y, 'r', 'linewidth', 3)
+>> axis([0 2*pi -1 1]);
+>> gird on
+error: 'gird' undefined near line 1, column 1
+>> grid on
+>> xlabel('x');
+>> ylabel('y');
+>> title ('Sine graph');
+>> legend('y=sin(x)');
+>> clear
+>> clf
+>> x = [1 2 3 4]
+x =
+
+   1   2   3   4
+
+>> y = [1 2 5 4]
+y =
+
+   1   2   5   4
+
+>> plot(x, y, 'o')
+>> hold on
+>> plot (x, 1.2*x)
+>> grid on
+>> axis ([0 5 0 6])
+>> legend ('data points', 'regression line');
+>> clear
+>> clf
+>> x = linspace (-10, 10, 100);
+>> plot (x, x^2*sin(x))
+error: for x^y, only square matrix arguments are permitted and one argument must be scalar.  Use .^ for elementwise power.
+>> plot (x, x.^2.*sin(x))
+>> print graph2.png -dpng
+>> print('graph2.png','-dpdf')
+>> clear
+>> clf
+>> loop_for
+Elapsed time is 0.26677 seconds.
+>> loop_vec
+Elapsed time is 0.00684404 seconds.
+>> diary off
+>> diary off
